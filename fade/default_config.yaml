@@ -1,0 +1,76 @@
+paths:
+  output_path: "/Path/To/Output/Folder/" # Path to the output directory where the evaluation results will be saved
+  cached_activations: null # Path to the cached data folder
+
+subjectLLM:
+  sae_module: False
+  batch_size: 4 # Batch size for the subject model
+
+evaluationLLM:
+  type: "type_of_evaluation_model" # type of evaluation model as in: vllm, ollama, azure
+  name: "modelname" # name of the explainer model
+  api_key: "Secret Key" # API key if required
+  base_url: "https://test.com/" # base url where to reach the model
+  api_version: "2024-02-02" # API version of the model
+
+experiments:
+  store_data: True # Whether to store the generated and rated data in the output path
+  rating_batch_size: 15 # Number of samples to be rated in one call to the explainer
+  gini_threshold: 0.5 # Threshold for confirming concept neuron. If Score is below this threshold, the concept neuron is not considered to be present. Should be between 0 and 1.
+  
+  clarity:
+    llm_calls: 15 # Number of parallel calls to the LLM given the prompt - determines the number of samples to be generated
+
+  responsiveness_and_purity:
+    num_samples: 500 # Number of samples to be rated in total - determines the number of calls to the explainer in combination with the explainer batch size
+    max_failed_retries: 1 # The maximum number of retries when samples fail to generate ratings.
+    max_sparse_retries: 1 # The maximum number of retries if not enough samples have non-zero ratings.
+    retry_sparse_threshold: 15 # The number of non-zero ratings below which additional samples are generated.
+    repeat_non_zeros: 0 # The number of times to repeat ratings for samples with non-zero ratings.
+    rating_top_sampling_percentage: 0.1 # Percentage of samples taken from the top of the activations
+
+  faithfulness:
+    modification_factors: [-50, -10, -1, 0, 1, 10, 50] # Modification factors to be applied to the neuron
+    num_samples: 50 # Number of samples to be generated for each modification factor - determines the number of calls to the explainer in combination with the explainer batch size
+    generation_length: 30 # Token length of the generated samples
+    max_failed_retries: 1 # The maximum number of retries when samples fail to generate ratings.
+    max_sparse_retries: 0 # The maximum number of retries if not enough samples have non-zero ratings.
+    retry_sparse_threshold: 20 # The number of non-zero ratings below which additional samples are generated.
+    repeat_non_zeros: 0 # The number of times to repeat ratings for samples with non-zero ratings.
+    rating_top_sampling_percentage: 0.1 # Percentage of samples taken from the top of the activations
+
+prompts:
+  generation: |
+    You are tasked with building a database of sequences that best represent a specific concept. 
+    To create this, you will generate sequences that vary in style, tone, context, length, and structure, while maintaining a clear connection to the concept. 
+    The concept does not need to be explicitly stated in each sequence, but each should relate meaningfully to it. Be creative and explore different ways to express the concept.
+
+    Here are examples of how different concepts might be expressed:
+
+    Concept: "German language" — Sequences might include German phrases, or sentences.
+    Concept: "Start of a Java Function" — Sequences might include Java code snippets defining a function.
+    Concept: "Irony" — Sequences might include ironic statements or expressions.
+
+    Provide your sequences as strings in a Python List format.
+
+    Example: ["This is a first example sequence.", "Second example sequence but it is much longer also there are somy typos in it. wjo told you that I can type?"]
+
+    Output only the Python List object, without any additional comments, symbols, or extraneous content.
+  rating: |
+    You are tasked with building a database of sequences that best represent a specific concept. 
+    To create this, you will review a dataset of varying sequences and rate each one according to how much the concept is expressed.
+
+    For each sequence, assign a rating based on this scale:
+
+    0: The concept is not expressed.
+    1: The concept is vaguely or partially expressed.
+    2: The concept is clearly and unambiguously present.
+
+    Use conservative ratings. If uncertain, choose a lower rating to avoid including irrelevant sequences in your database. 
+    If no sequence expresses the concept, rate all sequences as 0.
+
+    Each sequence is identified by a unique ID. Provide your ratings as a Python dictionary with sequence IDs as keys and their ratings as values.
+
+    Example Output: {{"14": 0, "15": 2, "20": 1, "27": 0}}
+
+    Output only the dictionary - no additional text, comments, or symbols.

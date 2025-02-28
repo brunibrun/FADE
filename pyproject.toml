@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fade-language"
+version = "0.1.0"
+description = "FADE: Why Bad Descriptions Happen to Good Features"
+readme = "README.md"
+authors = [
+    {name = "Bruno Puri"},
+    {name = "Aakriti Jain"},
+    {name = "Elena Golimblevskaia"}
+]
+license = {text = "BSD 3-clause"}
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.3.0",
+    "transformers>=4.40.2",
+    "scikit-learn>=1.2.2",
+    "langchain>=0.2.5",
+    "langchain-community>=0.2.5",
+    "langchain_ollama==0.2.3",
+    "langchain-openai>=0.1.8",
+    "matplotlib>=3.7.2",
+    "seaborn>=0.12.2",
+    "numpy>=1.25.2",
+    "pandas>=2.2.2",
+    "h5py",
+    "pydantic",
+    "PyYAML"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/brunibrun/FADE/"
+"Bug Tracker" = "https://github.com/brunibrun/FADE/issues"
+
+[tool.setuptools]
+packages = ["fade"]
+
+[tool.setuptools.package-data]
+fade = ["*.yaml", "default_config.yaml"]

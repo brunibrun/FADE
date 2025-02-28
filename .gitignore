@@ -1,1 +1,10 @@
 .DS_Store
+output/
+__pycache__/
+env/
+venv/
+.venv/
+lib/
+lib64/
+*.log
+.vscode/
