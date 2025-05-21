@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fade-language"
-version = "0.1.0"
+version = "0.1.1"
 description = "FADE: Why Bad Descriptions Happen to Good Features"
 readme = "README.md"
 authors = [
