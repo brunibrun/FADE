@@ -1,6 +1,5 @@
 paths:
-  output_path: "/Path/To/Output/Folder/" # Path to the output directory where the evaluation results will be saved
-  cached_activations: null # Path to the cached data folder
+  output_path: "/Path/To/Output/Folder/" # Path to the output directory where the evaluation results will be saved if store_data is set to True
 
 subjectLLM:
   sae_module: False
@@ -14,7 +13,7 @@ evaluationLLM:
   api_version: "2024-02-02" # API version of the model
 
 experiments:
-  store_data: True # Whether to store the generated and rated data in the output path
+  store_data: False # Whether to store the generated and rated data in the output path
   rating_batch_size: 15 # Number of samples to be rated in one call to the explainer
   gini_threshold: 0.5 # Threshold for confirming concept neuron. If Score is below this threshold, the concept neuron is not considered to be present. Should be between 0 and 1.
   

@@ -1,27 +1,11 @@
 from torch.utils.data import Dataset
 import h5py
-from typing import Dict, Any, Tuple
+from typing import Dict, Any, Tuple, Protocol
+import torch
 
 
-class CachedActivationLoader:
-    def __init__(self, file_path: str):
-        """
-        Initialize the cached activation loader.
-
-        Args:
-            file_path (str): Path to the H5Py file containing cached activations.
-        """
-        self.cache_path = file_path
-        self.cache_file = h5py.File(file_path, "r")
-
-    def __del__(self):
-        """
-        Close the cache file when the object is deleted.
-        """
-        if hasattr(self, 'cache_file') and self.cache_file:
-            self.cache_file.close()
-
-    def load_activations(self, neuron_index: int) -> Any:
+class ActivationLoader(Protocol):
+    def __call__(self, neuron_index: int) -> torch.Tensor:
         """
         Load activations for a specific neuron index.
 
@@ -29,12 +13,10 @@ class CachedActivationLoader:
             neuron_index (int): The index of the neuron to load activations for.
 
         Returns:
-            Any: The activations for the specified neuron.
+            torch.Tensor: The activations for the specified neuron.
         """
-        try:
-            return self.cache_file[f"neuron_{neuron_index}"][:]
-        except KeyError:
-            raise KeyError(f"Neuron index {neuron_index} not found in cache file")
+        ...
+
 
 
 class DictionaryDataset(Dataset):

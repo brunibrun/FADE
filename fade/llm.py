@@ -87,13 +87,11 @@ class EvaluationLLM:
         Initialize the language model based on the specified model kind.
         """
         if self.model_kind == 'openai': 
-            self.llm = ChatOpenAI(openai_api_key=self.openai_key, model=self.model_name)
+            self.llm = ChatOpenAI(openai_api_key=self.openai_key, model=self.model_name, openai_api_base=self.base_url)
         elif self.model_kind == 'azure':
             self.llm = AzureChatOpenAI(azure_endpoint=self.base_url, api_key=self.openai_key, model=self.model_name, api_version=self.api_version)
         elif self.model_kind == 'ollama':
             self.llm = ChatOllama(model=self.model_name, base_url=self.base_url)
-        elif self.model_kind == 'vllm':
-            self.llm = ChatOpenAI(model=self.model_name, openai_api_key='EMPTY', openai_api_base=self.base_url)
         else:
             raise ValueError('Model kind not recognized')
 

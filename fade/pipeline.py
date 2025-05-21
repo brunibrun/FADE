@@ -8,7 +8,7 @@ from typing import Dict, List, Tuple, Optional, Any, Union, Callable
 from fade.hooks import ActivationHooks
 from fade.llm import EvaluationLLM, SubjectLLM, PydanticGenerationModel, PydanticRatingModel, RateSamples
 from fade.results import GenerateResults
-from fade.data import DictionaryDataset, CachedActivationLoader
+from fade.data import DictionaryDataset, ActivationLoader
 from fade.utils import timed_section, get_module_by_name, set_up_paths, load_config
 
 
@@ -17,10 +17,11 @@ class EvaluationPipeline:
            self,
             subject_model: Any, 
             subject_tokenizer: Any,
+
             dataset: Union[Dict[int, str], DictionaryDataset], 
             device: torch.device,
             config: Dict[str, Any],
-            cached_activations: Optional[str] = None,
+            activations: Optional[ActivationLoader] = None,
             verbose: bool = False,
             seed: Optional[int] = None,
             ):
@@ -31,7 +32,7 @@ class EvaluationPipeline:
             dataset: Dictionary or DictionaryDataset of text samples
             device: Device to run the model on
             config: Configuration dictionary
-            cached_activations: Path to cached activations
+            activations: Optional activation loader for cached activations
             verbose: Whether to print progress information
             seed: Random seed for reproducibility
         """
@@ -40,7 +41,7 @@ class EvaluationPipeline:
         self.dataset = dataset if isinstance(dataset, DictionaryDataset) else DictionaryDataset(dataset)
         self.config = load_config(config)
         self.device = device
-        self.cached_activations = self.load_cached_activations(cached_activations)
+        self.cached_activations = activations
         self.verbose = verbose
         self.seed = seed
 
@@ -65,23 +66,6 @@ class EvaluationPipeline:
             base_url=self.config["evaluationLLM"]["base_url"],
             api_version=self.config["evaluationLLM"]["api_version"]
             )
-        
-    def load_cached_activations(self, path: Optional[str]) -> Optional[CachedActivationLoader]:
-        """Load cached activations if a path is provided or configured.
-
-        Args:
-            path: Path to cached activations
-
-        Returns:
-            CachedActivationLoader or None
-        """
-        if path is not None:
-            return CachedActivationLoader(file_path=path)
-        elif path is None and self.config["paths"]["cached_activations"]:
-            path = self.config["paths"]["cached_activations"]
-            return CachedActivationLoader(file_path=path)
-        else:
-            return None
         
     def set_seed(self) -> None:
         """Set the random seed for reproducibility."""
@@ -279,7 +263,7 @@ class ActivationCentricPipeline:
         # generate or fetch natural activations
         with timed_section(self.pipeline.verbose, "- Natural Activations"):
             if self.pipeline.cached_activations:
-                natural_activations = torch.tensor(self.pipeline.cached_activations.load_activations(neuron_index=neuron_index), dtype=torch.float32).squeeze()
+                natural_activations = self.pipeline.cached_activations(neuron_index=neuron_index)
             else:
                 natural_activations = self.generate_activations(subject_llm_function, self.pipeline.dataset)
         
