@@ -27,6 +27,16 @@
 pip install fade-language
 ```
 
+## Tutorial
+Check out our [**Tutorial Notebook**](examples/fade_tutorial.ipynb) that walks you through:
+
+- A basic evaluation setup
+- Using cached activations for improved performance
+- Working with SAE features
+- Using different evaluation models
+- Advanced configuration options
+
+
 ## Quickstart
 
 ```python
