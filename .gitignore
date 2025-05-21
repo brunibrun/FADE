@@ -8,3 +8,5 @@ lib/
 lib64/
 *.log
 .vscode/
+/dist
+*.egg-info
