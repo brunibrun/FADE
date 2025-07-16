@@ -96,7 +96,9 @@ def deep_update(original: Dict[str, Any], update: Dict[str, Any]) -> Dict[str, A
         Dict[str, Any]: The updated dictionary.
     """
     for key, value in update.items():
-        if isinstance(value, dict) and key in original and isinstance(original[key], dict):
+        if key not in original:
+            raise KeyError(f"Unexpected key in config: '{key}'")
+        if isinstance(value, dict) and isinstance(original[key], dict):
             deep_update(original[key], value)
         else:
             original[key] = value

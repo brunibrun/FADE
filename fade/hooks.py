@@ -78,7 +78,7 @@ class ActivationHooks:
             Callable: A hook function that saves the layer's output activation.
         """
         def hook(model: nn.Module, input: torch.Tensor, output: torch.Tensor) -> None:
-            self.activations[name] = output.detach()
+            self.activations[name] = output.detach().clone()
         return hook
     
     def modify_layer_output_activation(self, name: str) -> Callable:

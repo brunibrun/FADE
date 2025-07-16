@@ -185,8 +185,8 @@ class PlotResults:
             save_path: Path to save the plot. If None, the plot is displayed.
         """
         # Exclude modification factor 1 and calculate differences relative to it
-        base = ratings[1]  # Base case with modification_factor = 1
-        differences = ratings.subtract(base, axis=0).drop(columns=[1])
+        base = ratings[0]  # Base case with modification_factor = 0
+        differences = ratings.subtract(base, axis=0).drop(columns=[0])
 
         # Transform the differences data into long format
         differences_long = differences.reset_index().melt(

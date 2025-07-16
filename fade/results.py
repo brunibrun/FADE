@@ -29,19 +29,43 @@ def gini_ap_metric(non_concept_activations: torch.Tensor, concept_activations: t
     return float(abs(gini)), float(ap)
 
 
+def faithfulness_metric(ratings_dict) -> Tuple[float, int, pd.DataFrame]:
+    """
+    Calculate faithfulness metric based on the ratings of the generated sequences.
+
+    Args:
+        ratings_dict (Dict[float, Dict[str, int]]): Ratings for generated sequences.
+
+    Returns:
+        float: Faithfulness metric.
+        int: maximal modification factor.
+        pd.DataFrame: Value counts of ratings for each modification factor.
+    """
+    ratings = pd.DataFrame(ratings_dict)
+    value_counts = ratings.apply(pd.Series.value_counts)
+    value_counts = value_counts.fillna(0).astype(int)
+    value_counts = value_counts.div(value_counts.sum(axis=0), axis=1)
+    if 2 in value_counts.T:
+        concept_vector = value_counts.T[2]
+        faithfulness = float(max(concept_vector.max() - concept_vector[0], 0) / (1-concept_vector[0]))
+        max_modification_factor = concept_vector.index.max() if faithfulness > 0 else None
+    else:
+        faithfulness = 0
+        max_modification_factor = None
+
+    return faithfulness, max_modification_factor, value_counts
+
 class GenerateResults:
-    def __init__(self, output_path: str, store_data: bool = True, sae_module: bool = False):
+    def __init__(self, output_path: str, store_data: bool = True):
         """
         Initialize results generation with output configuration.
 
         Args:
             output_path (str): Directory path to store generated results.
             store_data (bool, optional): Whether to store data files. Defaults to True.
-            sae_module (bool, optional): Flag for Sparse Autoencoder module. Defaults to False.
         """        
         self.output_path = output_path
         self.store_data = store_data
-        self.sae_module = sae_module
 
     def activation_centric_results(
         self, 
@@ -117,15 +141,7 @@ class GenerateResults:
         Returns:
             float: Faithfulness metric.
         """
-        ratings = pd.DataFrame(ratings_dict)
-        value_counts = ratings.apply(pd.Series.value_counts)
-        value_counts = value_counts.fillna(0).astype(int)
-        value_counts = value_counts.div(value_counts.sum(axis=0), axis=1)
-        if 2 in value_counts.T:
-            concept_vector = value_counts.T[2]
-            faithfulness = float(max(concept_vector.max() - concept_vector[0], 0) / (1-concept_vector[0]))
-        else:
-            faithfulness = 0
+        faithfulness, max_modification_factor, value_counts = faithfulness_metric(ratings_dict)
 
         if self.store_data:
             # data

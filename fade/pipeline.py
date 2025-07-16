@@ -66,7 +66,7 @@ class EvaluationPipeline:
             base_url=self.config["evaluationLLM"]["base_url"],
             api_version=self.config["evaluationLLM"]["api_version"]
             )
-        
+                
     def set_seed(self) -> None:
         """Set the random seed for reproducibility."""
         if self.seed is not None:
@@ -92,25 +92,19 @@ class EvaluationPipeline:
             Dict with evaluation metrics (clarity, responsiveness, purity, faithfulness)
         """
         # set up paths and results if necessary
-        if self.config["experiments"]["store_data"]:
-            self.result_path = set_up_paths(
-                output_folder=self.config["paths"]["output_path"], 
-                neuron_module=neuron_module, 
-                neuron_index=neuron_index, 
-                store_data=True
-            )
-            self.generate_results = GenerateResults(
-                output_path=self.result_path, 
-                store_data=True,
-                sae_module=self.config["subjectLLM"]["sae_module"],
-            )
-        else:
-            self.result_path = None
-            self.generate_results = GenerateResults(
-                output_path=None,
-                store_data=False,
-                sae_module=self.config["subjectLLM"]["sae_module"],
-            )
+        store_data = self.config["experiments"]["store_data"]
+
+        self.result_path = set_up_paths(
+            output_folder=self.config["paths"]["output_path"],
+            neuron_module=neuron_module,
+            neuron_index=neuron_index,
+            store_data=store_data
+        ) if store_data else None
+
+        self.generate_results = GenerateResults(
+            output_path=self.result_path,
+            store_data=store_data,
+        )
     
         if self.verbose:
             print(f"\nRunning Evaluation for \n- Module: {neuron_module} and Neuron: {neuron_index} \n- Concept: {concept}")
@@ -353,7 +347,7 @@ class OutputCentricPipeline:
                 generated_sequences[key] = sequence
         return generated_sequences
 
-    def hook_lm(self, neuron_module: str, neuron_index: Optional[int] = None) -> Tuple[ActivationHooks, SubjectLLM]:
+    def hook_lm(self, neuron_module: str) -> Tuple[ActivationHooks, SubjectLLM]:
         """Set up hooks for the output-centric pipeline.
         
         Args:
@@ -365,7 +359,12 @@ class OutputCentricPipeline:
         """
         hooks = ActivationHooks()
         if self.pipeline.config["subjectLLM"]["sae_module"]:
-            sae_value = self.pipeline.sae_max_value if hasattr(self.pipeline, "sae_max_value") and self.pipeline.sae_max_value is not None else 1.0
+            if hasattr(self.pipeline, "sae_max_value") and self.pipeline.sae_max_value is not None:
+                sae_value = self.pipeline.sae_max_value
+            else:
+                print("Warning: SAE steering value not set, using default value of 1.0", file=sys.stderr)
+                sae_value = 1.0
+
             hooks.register_hook(
                 module=get_module_by_name(self.pipeline.subject_model, neuron_module),
                 name=neuron_module,
@@ -416,7 +415,10 @@ class OutputCentricPipeline:
 
         # generate continuations under modification
         sequences = {}
-        for modification_factor in self.pipeline.config["experiments"]["faithfulness"]["modification_factors"]:
+        modification_factors = self.pipeline.config["experiments"]["faithfulness"]["modification_factors"]
+        if 0 not in modification_factors: # add baseline factor if not present already
+            modification_factors = [0] + modification_factors
+        for modification_factor in modification_factors:
             with timed_section(self.pipeline.verbose, f"- Generating Sequences for Modification Factor {modification_factor}"):
                 hooks.set_activation_modification(neuron_module, {neuron_index: modification_factor})
                 generated_sequences = self.batch_generate_sequences(subject_llm_function, dataloader)
