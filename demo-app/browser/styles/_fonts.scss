@@ -1,0 +1,113 @@
+@use "tailwindcss";
+
+/* FrutigerLTCom-Roman */
+@font-face {
+    font-family: 'Frutiger LT';
+    src: url('../fonts/FrutigerLTCom-Roman_2911433028.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* FrutigerLTCom-Black */
+@font-face {
+    font-family: 'Frutiger LT';
+    src: url('../fonts/FrutigerLTCom-Black_1897108004.ttf') format('truetype');
+    font-weight: 900;
+    /* 900 is often used for 'Black' weight */
+    font-style: normal;
+}
+
+/* FrutigerLTCom-Bold */
+@font-face {
+    font-family: 'Frutiger LT';
+    src: url('../fonts/FrutigerLTCom-Bold_4087404487.ttf') format('truetype');
+    font-weight: bold;
+    /* 700 is the numeric value for 'bold' */
+    font-style: normal;
+}
+
+/* FrutigerLTCom-BoldItalic */
+@font-face {
+    font-family: 'Frutiger LT';
+    src: url('../fonts/FrutigerLTCom-BoldItalic_2379986211.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* FrutigerLTCom-Italic */
+@font-face {
+    font-family: 'Frutiger LT';
+    src: url('../fonts/FrutigerLTCom-Italic_2292391326.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* FrutigerLTCom-Light */
+@font-face {
+    font-family: 'Frutiger LT';
+    src: url('../fonts/FrutigerLTCom-Light_388284991.ttf') format('truetype');
+    font-weight: 300;
+    /* 300 is often used for 'Light' weight */
+    font-style: normal;
+}
+
+/* FrutigerLTCom-LightItalic */
+@font-face {
+    font-family: 'Frutiger LT';
+    src: url('../fonts/FrutigerLTCom-LightItalic_2526705051.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+h1 {
+    font-family: 'Frutiger LT';
+    font-weight: 800;
+    @apply mt-8 mb-0 text-gray-800 text-2xl;
+}
+
+h2 {
+    font-family: 'Frutiger LT';
+    font-style: italic;
+    font-weight: normal;
+    @apply text-gray-800 text-xl;
+}
+
+h3 {
+    font-family: 'Frutiger LT';
+    font-style: italic;
+    font-weight: normal;
+    @apply text-gray-800 text-lg;
+}
+
+h4 {
+    line-height: 1.6rem;
+    @apply text-gray-800 text-base font-normal;
+}
+
+p,
+section {
+    font-family: 'Frutiger LT';
+    @apply text-base/6;
+}
+
+span {
+    font-family: 'Frutiger LT';
+    @apply text-base;
+}
+
+.small-content-label {
+    font-size: .8rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.dark .small-content-label {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.green-text {
+    color: #0E8A4A;
+}
+
+.red-text {
+    color: #EF3120;
+}
