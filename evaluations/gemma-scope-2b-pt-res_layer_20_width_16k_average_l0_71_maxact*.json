@@ -27,13 +27,6 @@
         "purity": 0.49807264469217954,
         "faithfulness": null
     },
-    "4": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.01788040837199012,
-        "responsiveness": 0.2637913741223671,
-        "purity": 0.0013605442176870747,
-        "faithfulness": null
-    },
     "5": {
         "concept": "Recurrence of the term \"trend\" in various contexts related to analysis and observation",
         "clarity": 0.9983606415765887,
@@ -6599,13 +6592,6 @@
         "responsiveness": 0.9469354838709678,
         "purity": 0.9363134316440759,
         "faithfulness": 0.14
-    },
-    "967": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'high'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.05188106167389628,
-        "responsiveness": 0.7497461928934008,
-        "purity": 0.0375886524822695,
-        "faithfulness": null
     },
     "968": {
         "concept": "Frequent usage of the token 'at' indicating various contexts or situations",
@@ -16694,13 +16680,6 @@
         "purity": 0.01380297122162091,
         "faithfulness": null
     },
-    "2470": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'high'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.019643524884441432,
-        "responsiveness": 0.19778002018163465,
-        "purity": 0.00625,
-        "faithfulness": null
-    },
     "2471": {
         "concept": "Protagonist and Subjective Agency",
         "clarity": 0.6425207604624086,
@@ -21440,13 +21419,6 @@
         "purity": 0.9398949712444001,
         "faithfulness": 0.07999999999999999
     },
-    "3174": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.1356239100380674,
-        "responsiveness": 0.04718875502008024,
-        "purity": 0.003619805055136451,
-        "faithfulness": null
-    },
     "3175": {
         "concept": "Geographical locations and institutional affiliations in academic contexts",
         "clarity": 0.8730688653362284,
@@ -22097,20 +22069,6 @@
         "responsiveness": 0.955964125560538,
         "purity": 0.9442814786472064,
         "faithfulness": 0.06
-    },
-    "3273": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.23520239979085722,
-        "responsiveness": 0.2631313131313131,
-        "purity": 0.06730536852399312,
-        "faithfulness": null
-    },
-    "3274": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': True, 'severity': 'medium",
-        "clarity": 0.040400352900271996,
-        "responsiveness": 0.08201058201058231,
-        "purity": 0.002957106893491956,
-        "faithfulness": null
     },
     "3275": {
         "concept": "Activation of auxiliary verbs indicating states or actions",
@@ -25094,13 +25052,6 @@
         "purity": 0.5639809268277922,
         "faithfulness": null
     },
-    "3715": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.010852500687913547,
-        "responsiveness": 0.2427419354838709,
-        "purity": 0.11231135266263909,
-        "faithfulness": null
-    },
     "3716": {
         "concept": "Frequent invocation of \"look\" suggesting examination or reflection",
         "clarity": 0.9904503350527676,
@@ -27383,13 +27334,6 @@
         "purity": 0.9958420734646737,
         "faithfulness": 0.54
     },
-    "4059": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'high'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.007643560030612173,
-        "responsiveness": 0.8973833543505676,
-        "purity": 0.12698262453535844,
-        "faithfulness": null
-    },
     "4060": {
         "concept": "Activation of database-related terms and SQL constructs",
         "clarity": 0.9959300169025773,
@@ -27697,13 +27641,6 @@
         "responsiveness": 0.9162100456621005,
         "purity": 0.43031703280731026,
         "faithfulness": 0.02
-    },
-    "4106": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'low'}, 'violence': {'filtered': True, 'severity': 'medium",
-        "clarity": 0.09991640756812648,
-        "responsiveness": 0.9190778420757888,
-        "purity": 0.13955486581391507,
-        "faithfulness": null
     },
     "4107": {
         "concept": "Public addresses and speeches",
@@ -30883,13 +30820,6 @@
         "purity": 0.691158503142062,
         "faithfulness": 0.12
     },
-    "4591": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'high'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.03274008346671664,
-        "responsiveness": 0.847082494969819,
-        "purity": 0.012987012987012988,
-        "faithfulness": null
-    },
     "4592": {
         "concept": "Identification of individuals and associated numerical values, often related to arrests or charges",
         "clarity": 0.6047920132768505,
@@ -33031,13 +32961,6 @@
         "responsiveness": 0.9229766633565044,
         "purity": 0.9056186750412718,
         "faithfulness": 0.04
-    },
-    "4908": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'high'}, 'violence': {'filtered': False, 'severity': 'low",
-        "clarity": 0.30541211492637443,
-        "responsiveness": 0.2194752774974773,
-        "purity": 0.004191762721214104,
-        "faithfulness": null
     },
     "4909": {
         "concept": "Activation of tokens related to 3D printing, 5G technology, and 16S rRNA gene sequences",
@@ -36077,13 +36000,6 @@
         "purity": 0.6481491714416218,
         "faithfulness": 0.06
     },
-    "5363": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.051925064329623516,
-        "responsiveness": null,
-        "purity": null,
-        "faithfulness": null
-    },
     "5364": {
         "concept": "Activation of tokens indicating boolean or conditional expressions and parameters",
         "clarity": 0.0033807594675590025,
@@ -36915,13 +36831,6 @@
         "clarity": 0.02088717707308896,
         "responsiveness": 0.792919822995575,
         "purity": 0.6979701572940129,
-        "faithfulness": null
-    },
-    "5489": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': True, 'severity': 'medium",
-        "clarity": 0.023635982147095058,
-        "responsiveness": 0.9464524765729585,
-        "purity": 0.0834942084942085,
         "faithfulness": null
     },
     "5490": {
@@ -39059,13 +38968,6 @@
         "purity": 0.9349991703078377,
         "faithfulness": 0.32
     },
-    "5808": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': True, 'severity': 'medium'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.05534297703135305,
-        "responsiveness": null,
-        "purity": null,
-        "faithfulness": null
-    },
     "5809": {
         "concept": "Fluctuation of states or conditions, often marked by the token 'the next",
         "clarity": 0.22715227566229257,
@@ -40121,13 +40023,6 @@
         "clarity": 0.053141101158868276,
         "responsiveness": 0.7397942386831275,
         "purity": 0.7683093261711468,
-        "faithfulness": null
-    },
-    "5960": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.05441544007081667,
-        "responsiveness": 0.10238335011748911,
-        "purity": 0.046311696311696314,
         "faithfulness": null
     },
     "5961": {
@@ -41733,13 +41628,6 @@
         "purity": 0.9399109947891008,
         "faithfulness": 0.1
     },
-    "6204": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': True, 'severity': 'medium",
-        "clarity": 0.053448813497221304,
-        "responsiveness": null,
-        "purity": null,
-        "faithfulness": null
-    },
     "6205": {
         "concept": "Academic citation formats and publication details",
         "clarity": 0.9055463782647262,
@@ -43196,13 +43084,6 @@
         "purity": 0.5478923551350989,
         "faithfulness": null
     },
-    "6421": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.0028922221645104607,
-        "responsiveness": 0.9482004709048097,
-        "purity": 0.08333333333333334,
-        "faithfulness": null
-    },
     "6422": {
         "concept": "Family structure and generational connections",
         "clarity": 0.08254416598413794,
@@ -44358,13 +44239,6 @@
         "purity": 0.6254722514258565,
         "faithfulness": 0.02
     },
-    "6589": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'high'}, 'violence': {'filtered': False, 'severity': 'low",
-        "clarity": 0.08424853825436851,
-        "responsiveness": 0.32902735562310026,
-        "purity": 0.06898222171463377,
-        "faithfulness": null
-    },
     "6590": {
         "concept": "Speed of sound and related physical properties",
         "clarity": 0.9987455849379607,
@@ -45155,13 +45029,6 @@
         "responsiveness": 0.9880147658085239,
         "purity": 0.9608997776924773,
         "faithfulness": 0.12000000000000001
-    },
-    "6709": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.003390556091494523,
-        "responsiveness": 0.11770623742454722,
-        "purity": 0.0022753128555176336,
-        "faithfulness": null
     },
     "6710": {
         "concept": "Warm and cordial hospitality",
@@ -46857,13 +46724,6 @@
         "purity": 0.26313020588888714,
         "faithfulness": null
     },
-    "6961": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.06501335390747587,
-        "responsiveness": 0.041792042795051776,
-        "purity": 0.0033142461877717446,
-        "faithfulness": null
-    },
     "6962": {
         "concept": "Interconnected processes of globalization, liberalization, and privatization",
         "clarity": 0.9658411278941552,
@@ -48088,13 +47948,6 @@
         "responsiveness": 0.9884838937476235,
         "purity": 0.9241801442048461,
         "faithfulness": 0.0
-    },
-    "7147": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.10132222999996121,
-        "responsiveness": 0.3695506371562707,
-        "purity": 0.11474916625149933,
-        "faithfulness": null
     },
     "7148": {
         "concept": "Activation of terms related to schemes and morphisms in algebraic geometry",
@@ -49467,13 +49320,6 @@
         "responsiveness": 0.9502923976608186,
         "purity": 0.9502607943997994,
         "faithfulness": 0.04
-    },
-    "7350": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'low'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'low'}, 'violence': {'filtered': True, 'severity': 'medium",
-        "clarity": 0.17546209312639727,
-        "responsiveness": 0.15068953918600725,
-        "purity": 0.006178739101274313,
-        "faithfulness": null
     },
     "7351": {
         "concept": "Variability of outcomes associated with \"end up",
@@ -51057,13 +50903,6 @@
         "purity": 0.7759380519241094,
         "faithfulness": 0.0
     },
-    "7591": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': True, 'severity': 'medium",
-        "clarity": 0.012476376815322876,
-        "responsiveness": 0.8372717733473243,
-        "purity": 0.25724362844232307,
-        "faithfulness": null
-    },
     "7592": {
         "concept": "Activation of tokens related to method invocations and object creations in code",
         "clarity": 0.0003151555435859654,
@@ -52245,13 +52084,6 @@
         "clarity": 0.06866564621581372,
         "responsiveness": 0.133165083135392,
         "purity": 0.04245038510434327,
-        "faithfulness": null
-    },
-    "7766": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.011707335286866405,
-        "responsiveness": 0.352112676056338,
-        "purity": 0.014898201944708752,
         "faithfulness": null
     },
     "7767": {
@@ -53576,13 +53408,6 @@
         "responsiveness": 0.8901665929529705,
         "purity": 0.8115202139387938,
         "faithfulness": 0.12
-    },
-    "7962": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': True, 'severity': 'medium",
-        "clarity": 0.016780877433698604,
-        "responsiveness": 0.9537223340040242,
-        "purity": 0.08550135501355013,
-        "faithfulness": null
     },
     "7963": {
         "concept": "Positive reinforcement and affirmation through the use of the token \"good",
@@ -55250,13 +55075,6 @@
         "purity": 0.9086376294216846,
         "faithfulness": 0.08
     },
-    "8209": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': True, 'severity': 'high'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.01808508212781479,
-        "responsiveness": 0.2065326633165827,
-        "purity": 0.0037204003314290695,
-        "faithfulness": null
-    },
     "8211": {
         "concept": "Activation of numerical and reference tokens across various contexts",
         "clarity": 0.15355154061988285,
@@ -55816,13 +55634,6 @@
         "responsiveness": 0.9393201067409214,
         "purity": 0.9313985180885638,
         "faithfulness": 0.1
-    },
-    "8292": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'high'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.04083880656304428,
-        "responsiveness": 0.9040041067761808,
-        "purity": 0.15461054731238047,
-        "faithfulness": null
     },
     "8293": {
         "concept": "Time-stamped data entries and logs",
@@ -56655,13 +56466,6 @@
         "clarity": 0.013517122927482639,
         "responsiveness": 0.4680530633170983,
         "purity": 0.5862347348730831,
-        "faithfulness": null
-    },
-    "8415": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.07529862157020206,
-        "responsiveness": 0.0995975855130784,
-        "purity": 0.003187422177794146,
         "faithfulness": null
     },
     "8417": {
@@ -58274,13 +58078,6 @@
         "purity": 0.015791530525675303,
         "faithfulness": null
     },
-    "8658": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.2668313528803852,
-        "responsiveness": 0.18585858585858583,
-        "purity": 0.005148154565933113,
-        "faithfulness": null
-    },
     "8659": {
         "concept": "Mathematical and programming operators and conditions",
         "clarity": 0.42186371262661915,
@@ -59036,13 +58833,6 @@
         "responsiveness": 0.998526781016521,
         "purity": 0.9914762068423932,
         "faithfulness": 0.14
-    },
-    "8768": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': True, 'severity': 'medium",
-        "clarity": 0.05526828620909319,
-        "responsiveness": 0.9458646616541355,
-        "purity": 0.3312859910737719,
-        "faithfulness": null
     },
     "8769": {
         "concept": "Activation of numerical and temporal references",
@@ -66891,13 +66681,6 @@
         "purity": 0.4547890074737289,
         "faithfulness": null
     },
-    "9943": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': True, 'severity': 'medium",
-        "clarity": 0.06137388351416284,
-        "responsiveness": 0.7438305306835553,
-        "purity": 0.22029331097662527,
-        "faithfulness": null
-    },
     "9944": {
         "concept": "Centrality of \"Cloud\" in technology discussions",
         "clarity": 0.99953106826762,
@@ -67267,13 +67050,6 @@
         "clarity": 0.38066935613017105,
         "responsiveness": 0.6990672557682867,
         "purity": 0.6895849220214472,
-        "faithfulness": null
-    },
-    "9997": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'high'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.041612922079686365,
-        "responsiveness": 0.055611222444889696,
-        "purity": 0.00296078431372549,
         "faithfulness": null
     },
     "9998": {
@@ -69936,13 +69712,6 @@
         "purity": 0.3668327673651314,
         "faithfulness": null
     },
-    "10392": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.029012996772550093,
-        "responsiveness": 0.8932178932178934,
-        "purity": 0.13863516694800848,
-        "faithfulness": null
-    },
     "10393": {
         "concept": "Prominent figures and locations in Gujarat",
         "clarity": 0.9998353190157041,
@@ -71454,13 +71223,6 @@
         "responsiveness": 0.9737091875474562,
         "purity": 0.9697726924773411,
         "faithfulness": 0.3
-    },
-    "10619": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.16115527562204268,
-        "responsiveness": 0.2660642570281124,
-        "purity": 0.002728512960436562,
-        "faithfulness": null
     },
     "10620": {
         "concept": "Activation of the token \"text\" in mathematical and scientific contexts",
@@ -74366,13 +74128,6 @@
         "responsiveness": 0.9562647754137115,
         "purity": 0.9251828735891325,
         "faithfulness": 0.0
-    },
-    "11047": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': True, 'severity': 'medium",
-        "clarity": 0.057033863680207686,
-        "responsiveness": 0.6401043175891046,
-        "purity": 0.03592491893227706,
-        "faithfulness": null
     },
     "11048": {
         "concept": "Common programming and function naming conventions highlighted by activated tokens",
@@ -79533,13 +79288,6 @@
         "purity": 0.9398043098544087,
         "faithfulness": 0.16
     },
-    "11812": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'high'}, 'violence': {'filtered': True, 'severity': 'high",
-        "clarity": 0.11566206689207004,
-        "responsiveness": 0.6743041412084181,
-        "purity": 0.12329150286104916,
-        "faithfulness": null
-    },
     "11813": {
         "concept": "Frequent use of curly braces for code structure and replacements",
         "clarity": 0.02220040795574807,
@@ -80154,13 +79902,6 @@
         "clarity": 0.4965184985622948,
         "responsiveness": 0.7408304731139377,
         "purity": 0.670720904401441,
-        "faithfulness": null
-    },
-    "11907": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'low'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.029705483853771808,
-        "responsiveness": 0.3780241935483871,
-        "purity": 0.0016181229773462784,
         "faithfulness": null
     },
     "11908": {
@@ -81073,13 +80814,6 @@
         "purity": 0.8164534804565005,
         "faithfulness": 0.12000000000000001
     },
-    "12042": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.04329614867602971,
-        "responsiveness": 0.9529780564263324,
-        "purity": 0.5142189916301052,
-        "faithfulness": null
-    },
     "12043": {
         "concept": "Navigation and reference tokens in web content",
         "clarity": 0.5397340506036965,
@@ -81828,13 +81562,6 @@
         "responsiveness": 0.9356166947407822,
         "purity": 0.9311899705095765,
         "faithfulness": 0.039999999999999994
-    },
-    "12156": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': True, 'severity': 'medium",
-        "clarity": 0.007298077643873024,
-        "responsiveness": 0.8858585858585859,
-        "purity": 0.04238760150524856,
-        "faithfulness": null
     },
     "12157": {
         "concept": "Engagement and support in user interactions",
@@ -89662,13 +89389,6 @@
         "purity": 0.8577013759086387,
         "faithfulness": 0.0
     },
-    "13324": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': True, 'severity': 'medium'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': True, 'severity': 'medium",
-        "clarity": 0.04488291947554979,
-        "responsiveness": 0.7547268907563025,
-        "purity": 0.07399272821182935,
-        "faithfulness": null
-    },
     "13325": {
         "concept": "Programming syntax and function definitions in various languages",
         "clarity": 0.002345644485692966,
@@ -95906,13 +95626,6 @@
         "purity": 0.8367202950791607,
         "faithfulness": 0.04
     },
-    "14257": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': True, 'severity': 'medium",
-        "clarity": 0.07774176035653624,
-        "responsiveness": 0.5859512556760262,
-        "purity": 0.15537630938089422,
-        "faithfulness": null
-    },
     "14258": {
         "concept": "Expressions of appreciation and acknowledgment of helpfulness",
         "clarity": 0.9888529620603044,
@@ -99959,13 +99672,6 @@
         "purity": 0.7945085418677327,
         "faithfulness": null
     },
-    "14855": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.008281744946580849,
-        "responsiveness": 0.27108433734939763,
-        "purity": 0.001375515818431912,
-        "faithfulness": null
-    },
     "14856": {
         "concept": "Variations of the token \"Sho\" and its derivatives",
         "clarity": 0.9103278800641845,
@@ -103185,13 +102891,6 @@
         "responsiveness": 0.9392819162404416,
         "purity": 0.878776017087455,
         "faithfulness": 0.039999999999999994
-    },
-    "15339": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': True, 'severity': 'medium",
-        "clarity": 0.13540012109447308,
-        "responsiveness": 0.31686930091185417,
-        "purity": 0.011017695963059779,
-        "faithfulness": null
     },
     "15340": {
         "concept": "Requests for information and communication",
@@ -107050,13 +106749,6 @@
         "purity": 0.909124227940631,
         "faithfulness": 0.52
     },
-    "15924": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.059615724176488305,
-        "responsiveness": 0.2681451612903225,
-        "purity": 0.0027472527472527475,
-        "faithfulness": null
-    },
     "15925": {
         "concept": "Identity and self-perception through the token 'a",
         "clarity": 0.6177765224954823,
@@ -108658,13 +108350,6 @@
         "clarity": 0.08165040134958113,
         "responsiveness": 0.6825935320228282,
         "purity": 0.5941106099803679,
-        "faithfulness": null
-    },
-    "16162": {
-        "concept": "Failed to generate due to Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': True, 'severity': 'medium'}, 'jailbreak': {'filtered': False, 'detected': False}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': True, 'severity': 'medium'}, 'violence': {'filtered': False, 'severity': 'safe",
-        "clarity": 0.031307715555978666,
-        "responsiveness": 0.9384140061791966,
-        "purity": 0.3764191115745714,
         "faithfulness": null
     },
     "16163": {
